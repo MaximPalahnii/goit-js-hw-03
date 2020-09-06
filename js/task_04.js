@@ -1,7 +1,7 @@
-const countTotalSalary = function (emoloyees) {
+const countTotalSalary = function (employees) {
   'use strict';
-
-  const values = object.values(emoloyees);
+  // Write code under this line
+  const values = Object.values(employees);
   let total = 0;
   for (const value of values) {
     total += value;
