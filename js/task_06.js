@@ -1,35 +1,19 @@
-function calculateTotalPrice(array, prop) {
-  'use strict';
-  // Write code under this line
-  let result = 0;
-
-  for (const product of array) {
-    if (prop === product.name) {
-      result += product.price * product.quantity;
-    }
+const apartment = {
+  imgUrl: 'https://via.placeholder.com/640x480',
+  descr: 'Просторная квартира в центре',
+  rating: 4,
+  price: 2153,
+  tags: ['premium', 'promoted', 'top'],
+  owner: {
+    name: 'Генри',
+    phone: '982-126-1588',
+    email: 'henry.carter@aptmail.com'
   }
-  return result;
-}
+};
 
-// Объекты и ожидаемый результат
-const products = [
-  { name: 'Радар', price: 1300, quantity: 4 },
-  { name: 'Радар', price: 1280, quantity: 2 },
-  { name: 'Радар', price: 1320, quantity: 1 },
-  { name: 'Сканер', price: 2700, quantity: 1 },
-  { name: 'Сканер', price: 2500, quantity: 3 },
-  { name: 'Дроид', price: 400, quantity: 7 },
-  { name: 'Захват', price: 1200, quantity: 2 },
-];
-
-console.log(calculateTotalPrice(products, 'Радар'));
-// 9080
-
-console.log(calculateTotalPrice(products, 'Сканер'));
-// 10200
-
-console.log(calculateTotalPrice(products, 'Захват'));
-// 2400
-
-console.log(calculateTotalPrice(products, 'Дроид'));
-// 2800
+// Пиши код ниже этой строки
+apartment.price = 5000;
+apartment.rating = 4.7;
+apartment.owner.name = 'Генри Сибола';
+apartment.tags.push('trusted');
+console.log(apartment);

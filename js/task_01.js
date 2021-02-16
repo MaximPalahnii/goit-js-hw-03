@@ -1,18 +1,8 @@
-let message = '';
-const user = {
-  age: 20,
-  hobby: 'html',
-  name: 'Mango',
-  premium: true,
+const apartment = {
+imgUrl: 'https://via.placeholder.com/640x480',
+descr: 'Просторная квартира в центре',
+rating: 4,
+price: 2153,
+tags: ['premium', 'promoted', 'top'] , 
 };
-//Write code under this line
-user.mood = 'happy';
-user['full time'] = true;
-user.hobby = 'skydiving';
-user.premium = false;
-const keys = Object.keys(user);
-// Write code under this line
-for (const key of keys) {
-  message += `${key}:${user[key]}\n`;
-}
-console.log(message);
+console.log(apartment);
